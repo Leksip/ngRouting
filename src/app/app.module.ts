@@ -3,30 +3,28 @@ import {NgModule} from '@angular/core'
 
 import {AppComponent} from './app.component'
 import {FormsModule} from '@angular/forms'
-import {AboutComponent} from './about/about.component'
 import {HomeComponent} from './home/home.component'
 import {PostsComponent} from './posts/posts.component'
 import {PostComponent} from './post/post.component'
-import {AboutExtraComponent} from './about-extra/about-extra.component'
-import {RouterModule} from "@angular/router";
+import {RouterModule} from "@angular/router"
 import {AppRoutingModule} from "./app-routing.module";
 import { ErrorComponent } from './error/error.component';
+import {AboutModule} from "./about/about.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     HomeComponent,
     PostsComponent,
     PostComponent,
-    AboutExtraComponent,
     ErrorComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
